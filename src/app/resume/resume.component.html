@@ -1,0 +1,406 @@
+<div
+  class="container"
+>
+  <div
+    data-aos="fade-down"
+    data-aos-duration="2000"
+    class="section-header">
+    <div class="avatar-area">
+      <div class="avatar"></div>
+      <h2 class="avatar-content">
+        Eco-Ji
+      </h2>
+    </div>
+    <div class="introduce-area">
+      <h3 class="introduce-content">
+        我是紀政豪 (Eco Ji)，畢業於國立聯合大學電機工程學系。在【金融業】擔任【前端工程師】一年，主要使用Angular進行Web和App開發，經歷過【上海商銀、台北富邦銀行和凱基銀行】的專案。在此期間，我還有帶領新人熟悉專案架構、進行demo演示、codeReview及安排新人切版進度的相關經驗。
+      </h3>
+      <div class="introduce-link">
+        <img
+          src="assets/github-mark.svg"
+          alt="github"
+          class="github-img"
+          (click)="onClickMedia(MediaLink.GitHub)"
+        >
+        <img
+          src="assets/linkedin-logo.svg"
+          alt="LinkedIn"
+          class="linkedIn-img"
+          (click)="onClickMedia(MediaLink.LinkedIn)"
+        >
+      </div>
+    </div>
+  </div>
+
+  <div
+    data-aos="fade-right"
+    data-aos-duration="2000"
+    class="section-work-experience">
+    <h2 class="work-experience-title">工作經驗</h2>
+    <div class="work">
+      <div class="work-item">
+        <div class="work-title">
+          <img
+            src="assets/company-1.svg"
+            alt="company"
+            class="company-img"
+          >
+          <div class="company-content">
+            <h3 class="personal-title">電控(PLC)助理工程師</h3>
+            <h3 class="company-name">旭東機械工業股份有限公司</h3>
+            <p class="during">七月 2020 - 九月 2020</p>
+          </div>
+        </div>
+        <div class="work-content">
+          <ul>
+           <li>協助機台I/O訊號測試與Sensor位置調整</li>
+           <li>協助建立人機圖面(UI介面)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-title">
+          <img
+            src="assets/company-default.svg"
+            alt="company"
+            class="company-img"
+          >
+          <div class="company-content">
+            <h3 class="personal-title">設備組裝助理工程師</h3>
+            <h3 class="company-name">欽陽有限公司</h3>
+            <p class="during">一月 2022 - 十二月 2022</p>
+          </div>
+        </div>
+        <div class="work-content">
+          <ul>
+           <li>識別3D圖組裝設備</li>
+           <li>完成設備風管佈局</li>
+           <li>協助調機和測機</li>
+          </ul>
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-title">
+          <img
+            src="assets/company-hitrust.svg"
+            alt="company"
+            class="company-img"
+          >
+          <div class="company-content">
+            <h3 class="personal-title">Angular前端工程師</h3>
+            <h3 class="company-name">網際威信股份有限公司</h3>
+            <p class="during">四月 2023 - 六月 2024</p>
+          </div>
+        </div>
+        <div class="work-content">
+          <ul>
+           <li>利用Angular做App、Web切版及功能開發</li>
+           <li>經歷過【上海商銀、台北富邦銀行和凱基銀行】的專案</li>
+           <li>有新人熟悉專案架構、進行demo演示、codeReview及安排新人切版進度的相關經驗</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    data-aos="fade-left"
+    data-aos-duration="2000"
+    class="section-skill">
+    <h2 class="skill-title">技能</h2>
+    <div class="skill">
+      <div class="skill-item">
+        <div class="skill-item-title">
+          <h3>Front-end-skills</h3>
+        </div>
+        <div class="skill-item-content">
+          <ul>
+           <li>HTML、CSS和JavaScript</li>
+           <li>RWD響應</li>
+           <li>Tailwind、Bootstrap</li>
+           <li>React、Vue、Angular</li>
+           <li>TypeScript</li>
+           <li>能與後端工程師協作串接API</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-item-title">
+          <h3>Other-skills</h3>
+        </div>
+        <div class="skill-item-content">
+          <ul>
+           <li>Git 協作經驗</li>
+           <li>利用GitHub Actions做GitHub Page部屬</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 第三部分【作品集】 -->
+  <div
+    data-aos="flip-down"
+    data-aos-duration="2000"
+    class="section-portfolio"
+  >
+    <h2 class="portfolio-title">作品集</h2>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <img
+          src="assets/shopping.jpg"
+          alt="portfolio"
+          class="portfolio-item-img"
+          (click)="onClickPortfolio(PortfolioLink.Shop)"
+        >
+        <div class="portfolio-item-content">
+          <h3 
+            (click)="onClickPortfolio(PortfolioLink.Shop)"
+            class="title"
+          >
+            <u>購物車</u>
+          </h3>
+          <h3>功能：</h3>
+          <ul>
+            <li>RWD</li>
+            <li>使用者可以輸入寄件地址、選擇寄送方式和輸入付款資料</li>
+            <li>使用者可以增加或減少購物籃內的商品數量</li>
+            <li>使用者可以在最後確認付款資料是否正確</li>
+          </ul>
+
+          <h3>使用工具：</h3>
+          <p>TypeScript、React Hooks、React Router、ReduxTollKit、使用JSON-Server串接假資料</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img
+          src="assets/restaurant.jpg"
+          alt="portfolio"
+          class="portfolio-item-img"
+          (click)="onClickPortfolio(PortfolioLink.Restaurant)"
+        >
+        <div class="portfolio-item-content">
+          <h3 
+            (click)="onClickPortfolio(PortfolioLink.Restaurant)"
+            class="title"
+          >
+            <u>餐廳評論網</u>
+          </h3>
+          <h3>功能：</h3>
+          <ul>
+            <li>使用者可以新增或刪除餐廳評論</li>
+            <li>使用者可以觀看到餐廳資訊</li>
+            <li>使用者可以標註喜歡的餐廳</li>
+            <li>使用者可以觀看其他使用者的基本資訊</li>
+            <li>管理者可以新增、修改和移除餐廳資訊</li>
+            <li>管理者可以給予其他使用者後台使用權限</li>
+          </ul>
+
+          <h3>使用工具：</h3>
+          <p>Vue2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 第四部份 -->
+  <div
+    data-aos="fade-up-right"
+    data-aos-duration="2000"
+    class="section-educational"
+  >
+    <h2 class="educational-title">學歷</h2>
+    <div class="educational">
+      <div class="educational-item">
+        <img
+          src="assets/alpha-camp.svg"
+          alt="educational"
+          class="educational-img"
+          onclick="window.open('https://tw.alphacamp.co/')"
+        >
+        <div class="educational-content">
+          <h3>ALPHA Camp</h3>
+          <h3
+            class="second-title"
+            onclick="window.open('https://tw.alphacamp.co/dev_bootcamp')"
+          >
+            前端課程
+          </h3>
+          <p class="during">2021 - 2023</p>
+        </div>
+      </div>
+
+      <div class="educational-item">
+        <img
+          src="assets/university.png"
+          alt="educational"
+          class="educational-img"
+          onclick="window.open('https://www.nuu.edu.tw/')"
+        >
+        <div class="educational-content">
+          <h3>國立聯合大學 National United University</h3>
+          <h3
+            class="second-title"
+            onclick="window.open('https://ee.nuu.edu.tw/')"
+          >
+            電機系
+          </h3>
+          <p class="during">2015 - 2019</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 第五部分 -->
+  <div
+    data-aos="fade-up"
+    data-aos-duration="2000"
+    class="section-autobiography"
+  >
+    <h2 class="autobiography-title">自傳</h2>
+    <div class="autobiography">
+      <h4
+        class="title-mark"
+      >
+        您好，我是紀政豪，畢業於國立聯合大學電機工程學系，在【金融業】擔任【前端工程師】一年，主要使用Angular進行Web和App開發，經歷過【上海商銀、台北富邦銀行和凱基銀行】的專案。在此期間，我還有帶領新人熟悉專案架構、進行demo演示、codeReview及安排新人切版進度的相關經驗。
+      </h4>
+
+      <h4
+        class="autobiography-title-content"
+      >
+        在大學四年中，我與同學並列平均系排名第一，曾在大一和大二期間獲得一次書卷獎。由於基礎學科的重要性，我經常與同學討論學業，並在期中期末考中取得優異成績。我在大三時完成所有必修學分和畢業條件，讓我在大四能夠專注於專題研究和拓展視野。
+      </h4>
+
+      <div 
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        class="autobiography-item"
+      >
+        <h3>
+          成績和學經歷
+        </h3>
+        <h4
+          class="autobiography-content"
+        ></h4>
+        <ul>
+          <li>系排名(四技部)：1/66(1.52%)</li>
+          <li>書卷獎*1(學期班排前1%)</li>
+          <li>系上專題競賽佳作</li>
+        </ul>
+      </div>
+
+      <div 
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        class="autobiography-item"
+      >
+        <h3>
+          專題研究
+        </h3>
+        <h4
+          class="autobiography-content"
+        >
+          大三時，我與幾位同學組成團隊，參與指導教授的節能計畫專案，旨在協助中小企業降低用電成本。
+        </h4>
+        <ul>
+          <li>成果：
+            <ul>
+              <li>最佳化中小企業用電，每年平均降低5~10%用電量</li>
+              <li>調整契約容量，每年降低用電成本約10萬元</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div 
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        class="autobiography-item"
+      >
+        <h3>
+          實習經歷
+        </h3>
+        <h4
+          class="autobiography-content"
+        >
+          大四時，我主動聯繫學長實習的公司並取得實習機會，負責配線和線路測試。
+        </h4>
+        <ul>
+          <li>成果：
+            <ul>
+              <li>擔任10人場務團隊的講師，教導監控系統中的發報軟體 (alarm call)</li>
+              <li>協助處理監控系統中的PLC控制模組訊號收發問題</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div 
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        class="autobiography-item"
+      >
+        <h3>
+          進修經歷
+        </h3>
+        <h4
+          class="autobiography-content"
+        >
+          畢業前，我參加了指導教授開辦的PLC研習班，對PLC產生興趣。畢業後，我進入自動化產業，但因PLC程式能力有限，決定進修提升程式能力，並學習網頁設計。
+        </h4>
+        <ul>
+          <li>Alpha Camp進修：
+            <ul>
+              <li>HTML、CSS和JavaScript</li>
+              <li>RWD響應</li>
+              <li>TypeScript</li>
+              <li>React、Vue</li>
+              <li>與後端工程師協作串接API</li>
+              <li>多人協作專案</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div 
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        class="autobiography-item"
+      >
+        <h3>
+          結語
+        </h3>
+        <h4
+          class="autobiography-content"
+        >
+          我依然持續利用Open Source、線上課程及Community的資源繼續進修提升技術能力 ，目前正在學習【CICD、Docker、Kubernetes、Google Adsense及AWS】的相關知識及實做
+        </h4>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div
+    data-aos="fade-up"
+    data-aos-duration="2000"
+    class="section-relatedLink"
+  >
+    <h2 class="relatedLink-title">相關連結</h2>
+    <div class="relatedLink-area">
+      <h3
+        class="relatedLink-content"
+        onclick="window.open('https://global.turingcerts.com/zh-TW/co/cert?hash=f0d2b7f71c008219cec16c5f2038ca3314697db986a3fa2723b2628f53872be4')"
+      >
+        <u>Alpha Camp圖靈證書</u>
+      </h3>
+      <h3
+        class="relatedLink-content"
+        onclick="window.open('https://drive.google.com/file/d/1n2wUrpIODdNQN0bnxoQEK92nLY_n9AX0/view?usp=sharing')"
+      >
+        <u>大學成績和得獎證明</u>
+      </h3>
+    </div>
+  </div>
+</div>
