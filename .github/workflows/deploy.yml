@@ -27,6 +27,6 @@ jobs:
         if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.ECO_CV_TOKEN }} 
+          github_token: ${{ secrets.TEST_GA_TOKEN }} 
           publish_dir: dist/test-ga-cv
           enable_jekyll: true
